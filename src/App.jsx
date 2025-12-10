@@ -8,7 +8,6 @@ import Pricing from './pages/Pricing';
 import Forum from './pages/Forum';
 import Products from './pages/Product';  // CHANGED FROM "./pages/Products" to "./pages/Product"
 import Contact from './pages/Contact';
-import Team from './pages/Team';
 import PostEditor from './pages/PostEditor';
 
 function App() {
@@ -69,7 +68,6 @@ function App() {
                 <Link to="/pricing" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
                 <Link to="/forum" onClick={() => setIsMenuOpen(false)}>Forum</Link>
                 <Link to="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
-                <Link to="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               </nav>
               <div className="theme-toggle-container">
@@ -98,7 +96,6 @@ function App() {
             <Route path="/forum" element={<Forum />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/team" element={<Team />} />
             <Route path="/editor" element={<PostEditor />} />
           </Routes>
         </main>
