@@ -6,7 +6,7 @@ import CosmicBackground from './components/CosmicBackground';
 import Home from './pages/Home';
 import Pricing from './pages/Pricing';
 import Forum from './pages/Forum';
-import Products from './pages/Products';
+import Products from './pages/Product';  // CHANGED FROM "./pages/Products" to "./pages/Product"
 import Contact from './pages/Contact';
 import Team from './pages/Team';
 import PostEditor from './pages/PostEditor';
@@ -17,6 +17,9 @@ function App() {
 
   // 🧠 Tawk.to Live Chat Integration
   useEffect(() => {
+    // Only run in browser
+    if (typeof window === 'undefined') return;
+    
     var Tawk_API = Tawk_API || {};
     var Tawk_LoadStart = new Date();
     (function() {
@@ -38,6 +41,7 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Apply theme to document body
   useEffect(() => {
     if (theme === 'dark') {
       document.body.classList.add('dark-mode');
