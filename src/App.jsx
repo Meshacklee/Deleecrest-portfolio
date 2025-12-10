@@ -7,7 +7,7 @@ import Pricing from './pages/Pricing';
 import Forum from './pages/Forum';
 import Products from './pages/products';
 import Contact from './pages/Contact';
-import Team from './pages/Team';
+import Team from './pages/team';
 import PostEditor from './pages/PostEditor';
 
 function App() {

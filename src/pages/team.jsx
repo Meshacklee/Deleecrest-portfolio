@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Team = () => {
+const team = () => {
   const teamMembers = [
     {
       id: 1,
@@ -53,4 +53,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default team;
