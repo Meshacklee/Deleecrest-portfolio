@@ -5,7 +5,7 @@ import CosmicBackground from './components/CosmicBackground';
 import Home from './pages/Home';
 import Pricing from './pages/Pricing';
 import Forum from './pages/Forum';
-import Products from './pages/Products';
+import Products from './pages/products';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
 import PostEditor from './pages/PostEditor';
