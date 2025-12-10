@@ -1,3 +1,4 @@
+// src/pages/Team.jsx
 import React from 'react';
 
 const Team = () => {

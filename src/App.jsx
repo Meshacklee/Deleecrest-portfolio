@@ -1,3 +1,4 @@
+// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './index.css';
@@ -5,14 +6,14 @@ import CosmicBackground from './components/CosmicBackground';
 import Home from './pages/Home';
 import Pricing from './pages/Pricing';
 import Forum from './pages/Forum';
-import Products from './pages/Product';
+import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
 import PostEditor from './pages/PostEditor';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [theme, setTheme] = useState('dark'); // Default to dark mode
+  const [theme, setTheme] = useState('dark');
 
   // 🧠 Tawk.to Live Chat Integration
   useEffect(() => {
@@ -37,7 +38,6 @@ function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Apply theme to document body
   useEffect(() => {
     if (theme === 'dark') {
       document.body.classList.add('dark-mode');
@@ -64,8 +64,8 @@ function App() {
                 <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
                 <Link to="/pricing" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
                 <Link to="/forum" onClick={() => setIsMenuOpen(false)}>Forum</Link>
-                <Link to="/product" onClick={() => setIsMenuOpen(false)}>Products</Link>
-                <Link to="/Team" onClick={() => setIsMenuOpen(false)}>Team</Link>
+                <Link to="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
+                <Link to="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               </nav>
               <div className="theme-toggle-container">
@@ -92,7 +92,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/forum" element={<Forum />} />
-            <Route path="/product" element={<Products />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
             <Route path="/editor" element={<PostEditor />} />
