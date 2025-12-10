@@ -65,7 +65,7 @@ function App() {
                 <Link to="/pricing" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
                 <Link to="/forum" onClick={() => setIsMenuOpen(false)}>Forum</Link>
                 <Link to="/product" onClick={() => setIsMenuOpen(false)}>Products</Link>
-                <Link to="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
+                <Link to="/Team" onClick={() => setIsMenuOpen(false)}>Team</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               </nav>
               <div className="theme-toggle-container">
