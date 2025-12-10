@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-const Products = () => {
+const Product = () => {
   const [filter, setFilter] = useState('All');
 
   // Products section data
-  const products = [
+  const product = [
     {
       id: 1,
       name: "School Portal System",
@@ -153,6 +153,6 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Product;
 
 

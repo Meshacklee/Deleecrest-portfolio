@@ -5,9 +5,9 @@ import CosmicBackground from './components/CosmicBackground';
 import Home from './pages/Home';
 import Pricing from './pages/Pricing';
 import Forum from './pages/Forum';
-import Products from './pages/products';
+import Products from './pages/Product';
 import Contact from './pages/Contact';
-import Team from './pages/team';
+import Team from './pages/Team';
 import PostEditor from './pages/PostEditor';
 
 function App() {
@@ -16,20 +16,18 @@ function App() {
 
   // 🧠 Tawk.to Live Chat Integration
   useEffect(() => {
-  // --- Tawk.to Live Chat Script ---
-  var Tawk_API = Tawk_API || {};
-  var Tawk_LoadStart = new Date();
-  (function() {
-    var s1 = document.createElement("script"),
-        s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = "https://embed.tawk.to/6912a3f985e1d4195f23265c/1j9od12eq";
-    s1.charset = "UTF-8";
-    s1.setAttribute("crossorigin", "*");
-    s0.parentNode.insertBefore(s1, s0);
-  })();
-}, []);
-
+    var Tawk_API = Tawk_API || {};
+    var Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/6912a3f985e1d4195f23265c/1j9od12eq";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -66,7 +64,7 @@ function App() {
                 <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
                 <Link to="/pricing" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
                 <Link to="/forum" onClick={() => setIsMenuOpen(false)}>Forum</Link>
-                <Link to="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
+                <Link to="/product" onClick={() => setIsMenuOpen(false)}>Products</Link>
                 <Link to="/team" onClick={() => setIsMenuOpen(false)}>Team</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               </nav>
@@ -94,7 +92,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/forum" element={<Forum />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/product" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
             <Route path="/editor" element={<PostEditor />} />
