@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './index.css';
@@ -7,7 +6,7 @@ import Home from './pages/Home';
 import Pricing from './pages/Pricing';
 import Forum from './pages/Forum';
 import Products from './pages/Products';
-import Teams from './pages/Teams';
+import Teams from './pages/Teams';  // Make sure this file exists
 import Contact from './pages/Contact';
 import PostEditor from './pages/PostEditor';
 
@@ -69,9 +68,9 @@ function App() {
                 <Link to="/pricing" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
                 <Link to="/forum" onClick={() => setIsMenuOpen(false)}>Forum</Link>
                 <Link to="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
+                {/* Fix the link path to match the route */}
                 <Link to="/teams" onClick={() => setIsMenuOpen(false)}>Teams</Link>
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
-                
               </nav>
               <div className="theme-toggle-container">
                 <button 
@@ -99,7 +98,8 @@ function App() {
             <Route path="/forum" element={<Forum />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="teams" element={<Teams />} />
+            {/* Fix the route path - add / before teams */}
+            <Route path="/teams" element={<Teams />} />
             <Route path="/editor" element={<PostEditor />} />
           </Routes>
         </main>
