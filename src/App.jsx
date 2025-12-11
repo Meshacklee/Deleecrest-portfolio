@@ -2,13 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './index.css';
 import CosmicBackground from './components/CosmicBackground';
-import Home from './pages/Home';
-import Pricing from './pages/Pricing';
-import Forum from './pages/Forum';
-import Products from './pages/Products';
-import Teams from './pages/Teams';  // Make sure this file exists
-import Contact from './pages/Contact';
-import PostEditor from './pages/PostEditor';
+import { Home, Pricing, Forum, Products, Teams, Contact, PostEditor } from './pages';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

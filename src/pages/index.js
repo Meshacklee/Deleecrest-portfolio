@@ -1,14 +1,13 @@
 // import React from 'react'
 
 
-       // export { default as Home } from './Home';
-//export { default as Pricing } from './Pricing';
-//export { default as Forum } from './Forum';
-//export { default as Products } from './products';
-//export { default as Contact } from './Contact';
-//export { default as Team } from './team';
-//export { default as PostEditor } from './PostEditor';
-
+  export { default as Home } from './Home';
+export { default as Pricing } from './Pricing';
+export { default as Forum } from './Forum';
+export { default as Products } from './Products';
+export { default as Contact } from './Contact';
+export { default as Teams } from './Teams';  // ← Fixed: Teams instead of Team
+export { default as PostEditor } from './PostEditor';
 
 
 
